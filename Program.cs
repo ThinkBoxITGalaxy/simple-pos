@@ -23,7 +23,7 @@ namespace ConsoleApp1
             {
 				prid = "001",	
 				desc = "Video Card",
-				price = "200"
+				price = 200
             };
             products.Add(p);
         }
@@ -62,7 +62,7 @@ namespace ConsoleApp1
        public string prid { get; set; }
 
         // description or name sa product
-        string desc { get; set; }
+        public string desc { get; set; }
 
         //ang presyo
         public decimal price { get; set; }
