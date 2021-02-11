@@ -21,14 +21,11 @@ namespace ConsoleApp1
         {
             Product p = new Product
             {
-                string q = Console.ReadLine();
-				prid = q,	
-				desc = q,
-				price = decimal.Parse(q)
-
+				prid = "001",	
+				desc = "Video Card",
+				price = "200"
             };
-        products.Add(p);
-        
+            products.Add(p);
         }
 
         // Jee Ar
