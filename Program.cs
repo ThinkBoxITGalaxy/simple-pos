@@ -19,9 +19,16 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-             string addp = Console.ReadLine();
-            products.Add(addp);
+            Product p = new Product
+            {
+                string q = Console.ReadLine();
+				prid = q,	
+				desc = q,
+				price = decimal.Parse(q)
 
+            };
+        products.Add(p);
+        
         }
 
         // Jee Ar
