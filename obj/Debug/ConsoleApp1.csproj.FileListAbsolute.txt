@@ -1,1 +1,7 @@
 C:\Users\MarvelDee\source\repos\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\bin\Debug\ConsoleApp1.exe.config
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\bin\Debug\ConsoleApp1.exe
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\bin\Debug\ConsoleApp1.pdb
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\obj\Debug\ConsoleApp1.exe
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\obj\Debug\ConsoleApp1.pdb
+C:\Users\MarvelDee\Desktop\git proj 1\simple-pos\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache

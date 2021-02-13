@@ -9,6 +9,7 @@ namespace ConsoleApp1
     class Program
     {
         static List<Product> products = new List<Product>();
+  
 
         static decimal total = 0;
 
@@ -19,28 +20,52 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Product p = new Product
-            {
-				prid = "001",	
-				desc = "Video Card",
-				price = 200
-            };
-            products.Add(p);
+                LoadProducts();
+
+                Console.WriteLine("Search Code");
+
+                string isearch = Console.ReadLine();
+                SearchProducts(isearch);
+
+
+            Console.ReadKey();
         }
 
         // Jee Ar
         // kani na Method kay himuan nimo ug code na pag Add kag item ni List<Product> products 
         static void LoadProducts()
         {
-           
+            Product p1 = new Product();
+            p1.prid = "001";
+            p1.desc = "Milo 25g";
+            p1.price = 15;
+            products.Add(p1);
+
+            Product p2 = new Product();
+            p2.prid = "002";
+            p2.desc = "RedHorse";
+            p2.price = 150;
+            products.Add(p2);
         }
 
         // Jude
         // kani kay mag search ug item gikan sa List<Product> products
         // daun i display sa Console ang prid ug ang desc
         // pero ang price kay dapat i add sa variable na decimal total
-        static void SearchProducts(string prid)
+
+      
+        static void SearchProducts(string isearch)
         {
+           
+            foreach (Product pr in products)
+            {
+                if (pr.prid == isearch)
+                {
+                    total = pr.price;
+                    Console.WriteLine(pr.prid+ " " + pr.desc +" subtotal: "+total.ToString());
+                   
+                }
+            }
         }
 
 
@@ -50,21 +75,8 @@ namespace ConsoleApp1
         // i display ang sukli
         static void Pay(double total)
         {
-
+            
         }
     }
-
-    // Kani na class mao ni template sa atong Sample data
-    // kani na approach kay para sayon i treat ni siya as template
-    public class Product
-    {
-        // ang ID sa producto gamiton sa seacrh
-       public string prid { get; set; }
-
-        // description or name sa product
-        public string desc { get; set; }
-
-        //ang presyo
-        public decimal price { get; set; }
-    }
+    
 }
