@@ -14,39 +14,41 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
               Students();
+			  
+			  searching();
               Console.Read();
         }
 
         static void searching()
         {
-            for (int i = 0; i < )
-            {
-
-            }
+            foreach(studentslist tss in stt)
+			{
+				Console.WriteLine(tss.id + " " + tss.name + " " + tss.age + " " + tss.address);
+			}
         }
 
         static void Students()
         {
-            studentslist st = new studentslist()
+            studentslist st = new studentslist();
             st.id = 001;
             st.name = "Ricardo";
             st.age = 12;
             st.address = "Taga bukid";
             stt.Add(st);
 
-             studentslist st1 = new studentslist()
+             studentslist st1 = new studentslist();
             st1.id = 002;
             st1.name = "Bruno";
             st1.age = 16;
             st1.address = "Taga suba";
             stt.Add(st1);
 
-             studentslist st2 = new studentslist()
+             studentslist st2 = new studentslist();
             st2.id = 003;
             st2.name = "marlo";
             st2.age = 12;
             st2.address = "Taga baybay";
-            stt.Add(s2t);
+            stt.Add(st);
             
         }
 
